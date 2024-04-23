@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+    grid-template-areas: 
+    'navbar'
+    'container1'
+    'container2'
+    'container3'
+    'container4'
+    'container5'
+    'footer';
+    grid-gap:0.5rem;
+    background-color: #020202;
+}
+.navbar{
+    grid-area:navbar;
+    height:8vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:1;
+    background-color:rgb(21, 18, 18);
+    box-shadow: 2px 5px grey;
+    /* border:1px solid black; */
+}
+.navbar>a{
+    color: whitesmoke;
+}
+
+.container1{
+grid-area:container1;
+border-left:1px solid black;
+background:url("https://plus.unsplash.com/premium_photo-1680582107403-04dfac02efc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmdzfGVufDB8fDB8fHww")no-repeat center center/cover;
+height:100vh;
+}
+.container2{
+    grid-area:container2;
+    height:45vw;
+    }
+.container3{
+ grid-area:container3;
+ height:45vw;
+        }
+.container4{
+ grid-area:container4;
+ height:25vw;
+            }
+.container5{
+ grid-area:container5;
+ height:50vw;
+}
+.container{
+    padding:20px;
+    width:97.5vw;
+    margin:10px;
+    box-sizing:border-box;
+    /* border:1px solid green; */
+}
+.footer{
+  grid-area:footer;
+  height:5vw;
+  background-color:black;
+  color:white;
+  bottom:0;
+  text-align:center;
+  padding-top:20px;
+    /* border:1px solid red; */
+}
+
+/**************************************************************************navbar*******************************************************/
+a{
+color:black;
+text-decoration:none;
+    font-size:15px;
+   padding:20px 35px 20px 30px;
+   letter-spacing:3px;
+}
+/********************************************************************************************projects*******************************/
+.heading{
+    font-size:25px;
+    margin-top:25px;
+    margin-bottom:20px;
+}
+span{
+    position:relative;
+    top:30px;
+    color:white;
+    width:60px;
+    height:40px;
+    padding:10px;
+    background-color:black;
+}
+.image-collection{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap:1rem;
+    margin-top:40px;
+}
+.image-collection img{
+    width:300px;
+    height:300px;
+}
+
+/***********************************************************************about**************************************************/
+.about-image-card-designation{
+    color:grey;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.about-img-card>img{
+    width:350px;
+    height:350px;
+}
+.about-image-card-button{
+    width:350px;
+    height:5vh;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:rgb(156, 151, 151);
+    border:none;
+    font-size:18px;
+    color:white;
+}
+.image-card-collection{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px,1fr) );
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.about-img-card{
+width:350px;
+height:450px;
+}
+
+/*****************************************************************contact***************************************************************/
+/* Style for input elements */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Blue bottom border */
+    background-color: #f0f0f0; /* Light gray background */
+    font-size: 16px;
+    color: #272323; /* Text color */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Add a focus effect on input */
+input:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    background-color: #fff; /* White background on focus */
+    outline: none;
+    box-shadow: 0 2px 4px rgba(227, 219, 219, 0.915); /* Subtle box shadow on focus */
+}
+
+
+/* Add a focus effect on input */
+input:focus {
+    border-color: #007bff; /* Change border color on focus (e.g., blue) */
+    outline: none; /* Remove the default outline */
+}
+
+/* Add this CSS to style your "SEND MESSAGE" button */
+.contact-button {
+    background-color: #007bff; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+
+@media only screen and (max-width:1500px){
+        body{
+            display:grid;
+            grid-template-areas: 
+            'navbar'
+            'container1'
+            'container2'
+            'container3'
+            'container4'
+            'container5'
+            'footer';
+            grid-gap:0.5rem;
+        }
+        .navbar{
+            height:8vh;
+            width:100%;
+            z-index:1;
+        }
+        
+        .container1{
+            height:100vh;
+            padding-top:200px;
+            padding-bottom:200px;
+        }
+        .container2{
+            height:100%;
+            }
+        .container3{
+         height:100%;
+                }
+        .container4{
+         height:50vw;
+                    }
+        .container5{
+         height:100vh;
+         padding-top:200px;
+         padding-bottom:200px;
+        }
+        .container{
+            width:97vw;
+            height:100%;
+        }
+        .footer{
+            width:97vw;
+            margin-left:10px
+        }
+        
+}
